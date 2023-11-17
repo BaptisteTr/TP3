@@ -1,0 +1,160 @@
+body {
+  padding: 0px;
+  margin : 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+#menu > h1 {
+  font-size: medium;
+}
+
+#commande {
+  background-color: #D2483D;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#commande > p {
+  color: white;
+  font-weight: 600;
+}
+
+.button {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.button > p {
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#adresses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  justify-content: space-around;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+}
+
+#carte {
+  display: none;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#contact > p {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+#contact > form {
+  display: flex;
+  flex-direction: column;
+  gap : 20px;
+  width: 90%;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer {
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1280px) {
+  #menu {
+    justify-content: flex-start;
+    gap : 15px;
+    margin-left: 20px;
+  }
+
+  #carte {
+    display: block;
+    width: 70%;
+    overflow: hidden;
+  }
+
+  #adress_carte {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #carte img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  #adresses {
+    width: 30%;
+  }
+
+  .demi_block {
+    flex-grow : 1;
+    width : 45%;
+  }
+
+  .grand_block {
+    flex-grow : 2;
+    width: 100%;
+  }
+
+  #contact > form  {
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  #footer {
+    justify-content: flex-end;
+    gap : 20px;
+    padding-right: 50px;
+  }
+
+}
